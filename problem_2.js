@@ -1,16 +1,14 @@
-var x = 1;
+var x = 0;
 var y = 1;
-var z;
-var sum;
+var sum = 0;
+var temp;
 
-while( x <= 4e6){
-  if(x % 2 === 0){
-    sum += x;
-  }
-
-z = x + y;
-y = x;
-x = sum;
-
-}
-console.log(sum);
+   while(x <= 4e6){
+       temp = x + y;
+       x = y;
+       y = temp;
+       if(x % 2 === 0){
+           sum += x;
+       }
+   }
+  console.log(sum);
