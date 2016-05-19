@@ -1,10 +1,16 @@
-var sum = 0;
-var total =0;
-for(var i=0; i<4000000; i+=1){
-  sum += sum;
-  if(sum % 2 === 0) {
-    total += sum;
-  }
-}
+var x = 1;
+var y = 1;
+var z;
+var sum;
 
-console.log(total);
+while( x <= 4e6){
+  if(x % 2 === 0){
+    sum += x;
+  }
+
+z = x + y;
+y = x;
+x = sum;
+
+}
+console.log(sum);
