@@ -14,12 +14,13 @@ var y = 1;
 var sum = 0;
 var temp;
 //Run while loop with nested if to check and add to sum if modulus checks out
-   while(x <= 4e6){
-       temp = x + y;
-       x = y;
-       y = temp;
-       if(x % 2 === 0){
-           sum += x;
+while(x <= 4e6){
+    temp = x + y;
+    x = y;
+    y = temp;
+
+    if(x % 2 === 0){
+        sum += x;
        }
    }
 console.log(sum); //spit out big number, which should be 4613732
