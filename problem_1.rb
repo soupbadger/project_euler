@@ -6,4 +6,4 @@ for i in 1...1000
 end
 puts sum
 
-#comment for test commit
+#comment for test commit 3
